@@ -6,7 +6,7 @@ use App\Helper\ResponseHelper;
 use Illuminate\Http\Request;
 use App\Models\Course;
 use Exception;
-use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Log; 
 
 /**
  * ALLOW USER TO APPLY FOR A COURSE

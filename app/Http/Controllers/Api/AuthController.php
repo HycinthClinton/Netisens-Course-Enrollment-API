@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use App\Models\User;
 use Exception;
+use Illuminate\Http\JsonResponse;
 
 class AuthController extends Controller
 {
@@ -18,7 +19,7 @@ class AuthController extends Controller
     /**
      *FUNCTION: REGISTER NEW USER.
      * @param App\Requests\RegisterRequest $request
-     * @return JSONResponse 
+     * @return JsonResponse 
      */
     public function register(RegisterRequest $request)
     {
@@ -80,7 +81,7 @@ class AuthController extends Controller
     /** 
      * function: Auth user data / profile data
      * @param NA 
-     * @return JSONResponse 
+     * @return JsonResponse
     */
 
     public function userProfile() {
@@ -103,7 +104,7 @@ class AuthController extends Controller
 /**
  * FUNCTION: LOGOUT USER 
  * @param NA
- * @return JSONResponse
+ * @return JsonResponse
  */  
 
  public function userLogout() {

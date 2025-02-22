@@ -37,7 +37,7 @@ class LoginRequest extends FormRequest
     {
         return [
             'email.required' => 'please enter the registered email address',
-            'email.email' => 'please entera valid email address',
+            'email.email' => 'please enter a valid email address',
             'password.required' => 'please enter your password',
         ];
     }
